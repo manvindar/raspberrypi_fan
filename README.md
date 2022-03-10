@@ -3,6 +3,7 @@
 Move fancontrol.sh file to /etc/init.d, and make it executable:
 
 ```sh
+sudo mv fancontrol.py /usr/local/bin/fancontrol
 sudo mv fancontrol.sh /etc/init.d/
 sudo chmod +x /etc/init.d/fancontrol.sh
 ```
