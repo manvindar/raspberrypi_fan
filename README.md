@@ -6,6 +6,7 @@ Move fancontrol.sh file to /etc/init.d, and make it executable:
 sudo mv fancontrol.py /usr/local/bin/fancontrol
 sudo mv fancontrol.sh /etc/init.d/
 sudo chmod +x /etc/init.d/fancontrol.sh
+sudo chmod +x /usr/local/bin/fancontrol
 ```
 Now we'll register the script to run on boot:
 ```sh
