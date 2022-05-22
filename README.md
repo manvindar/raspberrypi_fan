@@ -20,3 +20,14 @@ or
 ```sh
 sudo /etc/init.d/fancontrol.sh start
 ````
+
+And this is my systemd service file /usr/lib/systemd/system/usbreset.service which runs usb_reset.sh after my diplay manager has started:
+
+[Unit]
+Description=usbreset Service
+After=gdm.service
+Wants=gdm.service
+
+[Service]
+Type=oneshot
+ExecStart=/path/to/usb_reset.sh
